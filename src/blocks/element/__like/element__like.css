@@ -6,6 +6,7 @@
     cursor: pointer;
     transition: transform .3s linear;
 }
+
 .element__like:hover {
     transform: scale(1.09);
 }
