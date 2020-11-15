@@ -49,20 +49,6 @@ function Main(props) {
           />
         </div>
       </div>
-
-      <section className="elements">
-        {cards.map((item, index) => (
-          <div className="element" key={item._id}>
-            <Card
-              key={index}
-              card={item}
-              onCardLike={onCardLike}
-              onCardDelete={onCardDelete}
-              onCardClick={onCardClick}
-            />
-          </div>
-        ))}
-      </section>
     </main>
   );
 }
