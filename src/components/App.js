@@ -79,37 +79,7 @@ function App() {
           onCardClick={handleCardClick}
         />
         <Footer />
-        <PopupWithForm
-          title={"Редактировать профиль"}
-          name={"profile"}
-          children={
-            <>
-              <input
-                id="author-input"
-                className="popup__item"
-                type="text"
-                required
-                placeholder="Введите имя"
-                name="name"
-                minLength={"2"}
-                maxLength={"40"}
-              />
-              <input
-                id="about-input"
-                className="popup__item"
-                type="text"
-                required
-                placeholder="Расскажите о себе"
-                name="about"
-                minLength={"2"}
-                maxLength={"200"}
-              />
-            </>
-          }
-          isOpen={isEditProfilePopupOpen}
-          onClose={closeAllPopups}
-          textOnButton={"Сохранить"}
-        />
+
         <PopupWithForm
           title={"Новое место"}
           name={"add-card"}
