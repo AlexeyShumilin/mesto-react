@@ -51,9 +51,15 @@ function Main(props) {
       </div>
 
       <section className="elements">
-        {cards.map((card) => (
-          <div className="element" key={card._id}>
-            <Card element={card} onImageClick={onCardClick} />
+        {cards.map((item, index) => (
+          <div className="element" key={item._id}>
+            <Card
+              key={index}
+              card={item}
+              onCardLike={onCardLike}
+              onCardDelete={onCardDelete}
+              onCardClick={onCardClick}
+            />
           </div>
         ))}
       </section>
