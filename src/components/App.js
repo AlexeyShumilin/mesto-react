@@ -137,7 +137,7 @@ function App() {
   };
 
   function handleCardDeleteConfirm() {
-    const isOwn = cardDelete.owner._id === currentUser._id;
+    const isOwn = cardDelete._id === currentUser._id;
     setLoading(true);
     api
       .deleteCard(cardDelete._id, !isOwn)

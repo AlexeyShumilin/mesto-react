@@ -13,7 +13,7 @@ function Card({ card, onCardClick, onCardLike, onCardDelete }) {
   }
 
   function handleCardDelete() {
-    onCardDelete(card._id);
+    onCardDelete(card);
   }
 
   const isOwn = card.owner._id === currentUser._id;
