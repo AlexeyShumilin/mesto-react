@@ -1,25 +1,24 @@
 {
   "files": {
-    "main.css": "./static/css/main.9558efc3.chunk.css",
-    "main.js": "./static/js/main.f40e2dc0.chunk.js",
-    "main.js.map": "./static/js/main.f40e2dc0.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.eb603a30.js",
-    "runtime-main.js.map": "./static/js/runtime-main.eb603a30.js.map",
-    "static/js/2.0fa2242a.chunk.js": "./static/js/2.0fa2242a.chunk.js",
-    "static/js/2.0fa2242a.chunk.js.map": "./static/js/2.0fa2242a.chunk.js.map",
-    "static/js/3.7f37cfaf.chunk.js": "./static/js/3.7f37cfaf.chunk.js",
-    "static/js/3.7f37cfaf.chunk.js.map": "./static/js/3.7f37cfaf.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/main.9558efc3.chunk.css.map": "./static/css/main.9558efc3.chunk.css.map",
-    "static/js/2.0fa2242a.chunk.js.LICENSE.txt": "./static/js/2.0fa2242a.chunk.js.LICENSE.txt",
-    "static/media/index.css": "./static/media/user-info__button.f85999c2.svg",
-    "static/media/avatar.6666407a.jpg": "./static/media/avatar.6666407a.jpg",
-    "static/media/logo.fb123762.svg": "./static/media/logo.fb123762.svg"
+    "main.css": "/https,://github.com/AlexeyShumilin/mesto-react.git/static/css/main.5b5b0226.chunk.css",
+    "main.js": "/https,://github.com/AlexeyShumilin/mesto-react.git/static/js/main.fb0aac1d.chunk.js",
+    "main.js.map": "/https,://github.com/AlexeyShumilin/mesto-react.git/static/js/main.fb0aac1d.chunk.js.map",
+    "runtime-main.js": "/https,://github.com/AlexeyShumilin/mesto-react.git/static/js/runtime-main.9438e714.js",
+    "runtime-main.js.map": "/https,://github.com/AlexeyShumilin/mesto-react.git/static/js/runtime-main.9438e714.js.map",
+    "static/js/2.00ea71ae.chunk.js": "/https,://github.com/AlexeyShumilin/mesto-react.git/static/js/2.00ea71ae.chunk.js",
+    "static/js/2.00ea71ae.chunk.js.map": "/https,://github.com/AlexeyShumilin/mesto-react.git/static/js/2.00ea71ae.chunk.js.map",
+    "static/js/3.534f7ee9.chunk.js": "/https,://github.com/AlexeyShumilin/mesto-react.git/static/js/3.534f7ee9.chunk.js",
+    "static/js/3.534f7ee9.chunk.js.map": "/https,://github.com/AlexeyShumilin/mesto-react.git/static/js/3.534f7ee9.chunk.js.map",
+    "index.html": "/https,://github.com/AlexeyShumilin/mesto-react.git/index.html",
+    "static/css/main.5b5b0226.chunk.css.map": "/https,://github.com/AlexeyShumilin/mesto-react.git/static/css/main.5b5b0226.chunk.css.map",
+    "static/js/2.00ea71ae.chunk.js.LICENSE.txt": "/https,://github.com/AlexeyShumilin/mesto-react.git/static/js/2.00ea71ae.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/https,://github.com/AlexeyShumilin/mesto-react.git/static/media/user-info__button.f85999c2.svg",
+    "static/media/logo.fb123762.svg": "/https,://github.com/AlexeyShumilin/mesto-react.git/static/media/logo.fb123762.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.eb603a30.js",
-    "static/js/2.0fa2242a.chunk.js",
-    "static/css/main.9558efc3.chunk.css",
-    "static/js/main.f40e2dc0.chunk.js"
+    "static/js/runtime-main.9438e714.js",
+    "static/js/2.00ea71ae.chunk.js",
+    "static/css/main.5b5b0226.chunk.css",
+    "static/js/main.fb0aac1d.chunk.js"
   ]
 }
