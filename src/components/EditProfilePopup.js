@@ -31,40 +31,38 @@ function EditProfilePopup({ isOpen, onClose, onUpdateUser, isLoading }) {
   return (
     <PopupWithForm
       title="Редактировать профиль"
-      name={"profile"}
+      name="edit-profile"
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}
       isLoading={isLoading}
-      submitTitle="Сохранить"
+      submitTitle={"Сохранить"}
     >
-      <>
-        <input
-          id="author-input"
-          className="popup__item"
-          onChange={handleNameUpdater}
-          value={name}
-          type="text"
-          name="name"
-          placeholder="Введите имя"
-          minLength="2"
-          maxLength="40"
-          pattern="[a-zA-Zа-яёА-ЯЁ\s-]*"
-          required
-        />
-        <input
-          id="about-input"
-          className="popup__item"
-          onChange={handleDescriptionUpdater}
-          value={description}
-          type="text"
-          name="about"
-          placeholder="Расскажите о себе"
-          minLength="2"
-          maxLength="200"
-          required
-        />
-      </>
+      <input
+        id="author-input"
+        className="popup__item"
+        onChange={handleNameUpdater}
+        value={name || ""}
+        type="text"
+        name="name"
+        placeholder="Введите имя"
+        minLength="2"
+        maxLength="40"
+        pattern="[a-zA-Zа-яёА-ЯЁ\s-]*"
+        required
+      />
+      <input
+        id="about-input"
+        className="popup__item"
+        onChange={handleDescriptionUpdater}
+        value={description || ""}
+        type="text"
+        name="about"
+        placeholder="Расскажите о себе"
+        minLength="2"
+        maxLength="200"
+        required
+      />
     </PopupWithForm>
   );
 }

@@ -1,33 +1,33 @@
 import React from "react";
 import { CurrentUserContext } from "../context/CurrentUserContext";
 
-function Card({ element, onCardClick, onCardLike, onCardDelete }) {
+function Card({ card, onCardClick, onCardLike, onCardDelete }) {
   const currentUser = React.useContext(CurrentUserContext);
 
   function handleClick() {
-    onCardClick(element);
+    onCardClick(card);
   }
 
   function handleLikeClick() {
-    onCardLike(element);
+    onCardLike(card);
   }
 
   function handleCardDelete() {
-    onCardDelete(element);
+    onCardDelete(card._id);
   }
 
-  const isOwn = element.owner._id === currentUser._id;
+  const isOwn = card.owner._id === currentUser._id;
 
   const cardDeleteButtonClassName = `element__delete-icon ${
     isOwn ? "element__delete-icon_active" : ""
   }`;
-  const isLiked = element.likes.some((i) => i._id === currentUser._id);
+  const isLiked = card.likes.some((like) => like._id === currentUser._id);
   const cardLikeButtonClassName = `element__like ${
     isLiked ? "element__like_clicked" : ""
   }`;
 
   return (
-    <>
+    <div className="element">
       <button
         className={cardDeleteButtonClassName}
         onClick={handleCardDelete}
@@ -36,12 +36,12 @@ function Card({ element, onCardClick, onCardLike, onCardDelete }) {
       />
       <img
         className="element__image"
-        src={element.link}
+        src={card.link}
         onClick={handleClick}
-        alt={element.link}
+        alt={card.link}
       />
       <div className="element__information">
-        <p className="element__title">{element.name}</p>
+        <p className="element__title">{card.name}</p>
         <div className="element__like">
           <button
             className={cardLikeButtonClassName}
@@ -50,11 +50,11 @@ function Card({ element, onCardClick, onCardLike, onCardDelete }) {
             aria-label="'лайк'"
           />
           <p className="element__like-number">
-            {element.likes.length > 0 ? `${element.likes.length}` : 0}
+            {card.likes.length > 0 ? `${card.likes.length}` : 0}
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

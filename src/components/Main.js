@@ -15,7 +15,7 @@ function Main(props) {
     onCardClick,
   } = props;
   return (
-    <main>
+    <main className="content">
       <div className="profile page__profile">
         <img
           className="profile__avatar"
@@ -49,6 +49,17 @@ function Main(props) {
           />
         </div>
       </div>
+      <section className="elements" aria-label="элементы">
+        {cards.map((item, index) => (
+          <Card
+            key={index}
+            card={item}
+            onCardLike={onCardLike}
+            onCardDelete={onCardDelete}
+            onCardClick={onCardClick}
+          />
+        ))}
+      </section>
     </main>
   );
 }

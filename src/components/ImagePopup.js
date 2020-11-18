@@ -1,8 +1,8 @@
 import React from "react";
 
-function ImagePopup({ onClose, isOpen, card }) {
+function ImagePopup({ onClose, card }) {
   return (
-    <div className={`popup img-popup ${isOpen && "img-popup_is-opened"}`}>
+    <div className={`popup img-popup ${card.isOpen && "img-popup_is-opened"}`}>
       <div className="img-popup__content">
         <button className="popup__close" onClick={onClose} />
         <img
