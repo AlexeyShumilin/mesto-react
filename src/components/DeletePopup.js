@@ -10,12 +10,11 @@ function DeletePopup({ isOpen, onClose, onSubmit, isLoading }) {
   return (
     <PopupWithForm
       onSubmit={handleSubmit}
-      title={"Вы уверены?"}
-      name={"confirm"}
+      title="Вы уверены?"
+      name="confirm"
       isOpen={isOpen}
       onClose={onClose}
-      isLoading={isLoading}
-      textOnButton={"Да"}
+      submitTitle="Да"
     />
   );
 }

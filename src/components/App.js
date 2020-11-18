@@ -152,14 +152,16 @@ function App() {
       .finally(() => setLoading(false));
   }
 
-  function handleAddPlaceSubmit(cardInfo) {
+  function handleAddPlaceSubmit(data) {
+    setLoading(true);
     api
-      .createNewCard(cardInfo)
-      .then((res) => {
-        setCards([...cards, res]);
+      .createNewCard(data)
+      .then((card) => {
+        setCards([card, ...cards]);
         closeAllPopups();
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err))
+      .finally(() => setLoading(false));
   }
 
   function handleCardDelete(card) {
