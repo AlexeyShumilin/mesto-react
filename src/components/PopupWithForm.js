@@ -8,7 +8,6 @@ function PopupWithForm({
   submitTitle,
   children,
   isOpen,
-  isLoading,
 }) {
   return (
     <div className={`popup popup-${name} ${isOpen && "popup_is-opened"}`}>
