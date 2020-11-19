@@ -13,8 +13,9 @@ function DeletePopup({ isOpen, onClose, onSubmit, isLoading }) {
       title="Вы уверены?"
       name="confirm"
       isOpen={isOpen}
+      isLoading={isLoading}
       onClose={onClose}
-      submitTitle="Да"
+      submitTitle={`${isLoading ? "Удаление" : "Да"}`}
     />
   );
 }

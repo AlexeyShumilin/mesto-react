@@ -27,8 +27,7 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace, isLoading }) {
       onSubmit={handleAddPlace}
       isOpen={isOpen}
       onClose={onClose}
-      submitTitle={"Создать"}
-      submitButton={`${isLoading ? "Создание" : "Создать"}`}
+      submitTitle={`${isLoading ? "Сохраняю" : "Добавить"}`}
     >
       <input
         onChange={handleChangeName}

@@ -24,7 +24,7 @@ function PopupWithForm({
         <h2 className="popup__title">{title}</h2>
         {children}
         <button className="popup__save" type="submit">
-          {isLoading ? `Сохраняю...` : `${submitTitle}`}
+          {submitTitle}
         </button>
       </form>
     </div>
