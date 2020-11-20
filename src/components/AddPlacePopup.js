@@ -1,40 +1,34 @@
 import React from "react";
 import PopupWithForm from "./PopupWithForm";
 
-function AddPlacePopup({ isOpen, onClose, onAddPlace, isLoading }) {
-  const [name, setName] = React.useState("");
-  const [link, setLink] = React.useState("");
+function AddPlacePopup({ onClose, isOpen, onAddPlace, isLoading }) {
+  const nameRef = React.useRef();
+  const linkRef = React.useRef();
 
   React.useEffect(() => {
-    name.current.value = "";
-    link.current.value = "";
-  }, [isOpen, link, name]);
+    nameRef.current.value = "";
+    linkRef.current.value = "";
+  }, [isOpen]);
 
-  function handleChangeName(e) {
-    setName(e.target.value);
-  }
-
-  function handleChangeLink(e) {
-    setLink(e.target.value);
-  }
-
-  function handleAddPlace(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    onAddPlace({ name, link });
-  }
+    onAddPlace({
+      name: nameRef.current.value,
+      link: linkRef.current.value,
+    });
+  };
 
   return (
     <PopupWithForm
       title="Новое место"
       name="new-place"
-      onSubmit={handleAddPlace}
+      onSubmit={handleSubmit}
       isOpen={isOpen}
       onClose={onClose}
       submitTitle={`${isLoading ? "Сохраняю" : "Добавить"}`}
     >
       <input
-        onChange={handleChangeName}
-        value={name || ""}
+        ref={nameRef}
         id="name-input"
         className="popup__item"
         type="text"
@@ -49,8 +43,7 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace, isLoading }) {
         className="popup__item"
         type="url"
         required
-        onChange={handleChangeLink}
-        value={link || ""}
+        ref={linkRef}
         placeholder="Ссылка на картинку"
         name="link"
       />
