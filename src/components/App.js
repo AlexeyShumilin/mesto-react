@@ -24,7 +24,7 @@ function App() {
     name: "",
   });
   const [isDeletePopupOpen, setIsDeletePopupOpen] = React.useState(false);
-  const [cardDelete, setCardDelete] = React.useState([]);
+  const [cardDelete, setCardDelete] = React.useState(null);
   const [cards, setCards] = React.useState([]);
   const [isLoading, setLoading] = React.useState(false);
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(
