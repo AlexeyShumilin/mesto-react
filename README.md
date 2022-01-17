@@ -1,7 +1,7 @@
 # Mesto React
 
 ### Link
-alexeyshumilin.github.io/mesto-react/§
+alexeyshumilin.github.io/mesto-react/
 
 ### About
 Service for viewing and posting photos, with the ability to like, edit the profile. All data is taken and sent to the server, there is form validation.
